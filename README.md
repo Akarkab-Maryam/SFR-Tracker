@@ -47,8 +47,10 @@ Ce script est un Google Apps Script qui applique une mise en forme conditionnell
 📌 Ce qu'on peut améliorer :
 
 
-
 🔹 Adapter la plage automatiquement en fonction du nombre de lignes.
+
+
+
 🔹 Éviter les doublons en supprimant les anciennes règles avant d'ajouter les nouvelles.
 
 
