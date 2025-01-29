@@ -15,7 +15,12 @@ J'ai créé un tableau de suivi sur Google Sheets pour gérer différents projet
 Lorsqu'un utilisateur saisit un secteur de projet, le type de CAFM est généré automatiquement grâce à un script VBA.
 ✅ Mise en forme conditionnelle avancée :
 
-Un script Google Apps Script applique une mise en forme conditionnelle spécifique en fonction des étapes du projet (ex : "EN COURS", "BLOQUÉ", etc.).
+
+
+Un script Google Apps Script applique une mise en forme conditionnelle spécifique en fonction des étapes du projet (ex : "EN COURS", "BLOQUÉ", etc.)
+
+
+
 🔹 Technologies utilisées
 
 📝 Google Sheets
