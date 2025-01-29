@@ -1,0 +1,38 @@
+function appliquerMiseEnFormeConditionnelle() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var range = sheet.getRange("B2:K100"); // Plage à ajuster en fonction du nombre de lignes
+  var rule1 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="En cours"') // Si l'état est "En cours"
+      .setBackground("#FFFF00") 
+      .setRanges([range])
+      .build();
+  var rule2 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Déposé AXIS"') // Si l'état est "Déposé AXIS"
+      .setBackground("#66FF66") // Vert
+      .setRanges([range])
+      .build();
+  var rule3 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Envoyé par mail"') // Si l'état est "Envoyé par mail"
+      .setBackground("#6FA8DC") // Bleu clair
+      .setRanges([range])
+      .build();
+  var rule4 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Déposé DROP"') // Si l'état est "Déposé DROP"
+      .setBackground("#FFD966") // Orange
+      .setRanges([range])
+      .build();
+  var rule5 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Bloqué"') // Si l'état est "Bloqué"
+      .setBackground("#E06666") // Rouge
+      .setRanges([range])
+      .build();
+
+  // Appliquer les règles à la feuille
+  var rules = sheet.getConditionalFormatRules();
+  rules.push(rule1);
+  rules.push(rule2);
+  rules.push(rule3);
+  rules.push(rule4);
+  rules.push(rule5);
+  sheet.setConditionalFormatRules(rules);
+}
