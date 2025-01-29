@@ -24,3 +24,32 @@ Un script Google Apps Script applique une mise en forme conditionnelle spécifiq
 
 
 ![image](https://github.com/user-attachments/assets/5a8360fc-a5ca-4556-8e41-f87478588cbd)
+
+
+Description du script mettreEnFormeSuiviProjet
+
+
+Ce script est un Google Apps Script qui applique une mise en forme conditionnelle à une feuille Google Sheets. Il modifie automatiquement l'arrière-plan des cellules d'une plage donnée (B2:K100) en fonction de la valeur de la colonne J (statut du projet)
+
+
+📌 Ce que fait ce script :
+
+
+✅ Applique une mise en forme conditionnelle en fonction du statut d'un projet.
+✅ Change la couleur des cellules pour mieux visualiser les différents états.
+✅ Affecte la mise en forme à une plage spécifique (B2:K100).
+
+📌 Ce qu'on peut améliorer :
+
+
+
+🔹 Adapter la plage automatiquement en fonction du nombre de lignes.
+🔹 Éviter les doublons en supprimant les anciennes règles avant d'ajouter les nouvelles.
+
+
+
+
+
+
+
+
