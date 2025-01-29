@@ -1,4 +1,6 @@
 📊 Projet : Suivi de Projet SFR - Google Sheets Automatisé
+
+
 🔹 Description
 J'ai créé un tableau de suivi sur Google Sheets pour gérer différents projets de SFR. Ce tableau inclut des automatisations via VBA et Google Apps Script pour améliorer l'efficacité du suivi.
 
