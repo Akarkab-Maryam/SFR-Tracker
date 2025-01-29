@@ -2,10 +2,15 @@
 
 
 🔹 Description
+
+
 J'ai créé un tableau de suivi sur Google Sheets pour gérer différents projets de SFR. Ce tableau inclut des automatisations via VBA et Google Apps Script pour améliorer l'efficacité du suivi.
 
 🔹 Fonctionnalités principales
+
 ✅ Remplissage automatique du type de CAFM :
+
+
 
 Lorsqu'un utilisateur saisit un secteur de projet, le type de CAFM est généré automatiquement grâce à un script VBA.
 ✅ Mise en forme conditionnelle avancée :
