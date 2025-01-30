@@ -1,0 +1,40 @@
+function appliquerMiseEnFormeConditionnelle() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var range = sheet.getRange("B2:K100"); // Plage ciblée
+
+  // 🔴 Supprimer toutes les règles existantes avant d'ajouter les nouvelles
+  sheet.setConditionalFormatRules([]);
+
+  var rule1 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="En cours"')
+      .setBackground("#FFFFE0") // Jaune pâle
+      .setRanges([range])
+      .build();
+  
+  var rule2 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Déposé AXIS"')
+      .setBackground("#B0E57C") // Vert clair
+      .setRanges([range])
+      .build();
+  
+  var rule3 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Envoyé par mail"')
+      .setBackground("#ADD8E6") // Bleu clair
+      .setRanges([range])
+      .build();
+  
+  var rule4 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Déposé DROP"')
+      .setBackground("#D8BFD8") // Lavande clair
+      .setRanges([range])
+      .build();
+  
+  var rule5 = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied('=$J2="Bloqué"')
+      .setBackground("#FFA07A") // Rouge clair
+      .setRanges([range])
+      .build();
+
+  // 🟢 Appliquer les nouvelles règles
+  sheet.setConditionalFormatRules([rule1, rule2, rule3, rule4, rule5]);
+}
