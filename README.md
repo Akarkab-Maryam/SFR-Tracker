@@ -17,9 +17,11 @@ Lorsqu'un utilisateur saisit un secteur de projet, le type de CAFM est généré
 
 
 
-Un script Google Apps Script applique une mise en forme conditionnelle spécifique en fonction des étapes du projet (ex : "EN COURS", "BLOQUÉ", etc.)
+Un script Google Apps Script applique une mise en forme conditionnelle spécifique en fonction des étapes du projet (ex : "EN COURS", "BLOQUÉ", "Dépose drop" , "dépose axis " etc.)
 
 
+
+C'est-à-dire que lorsque l'utilisateur choisit 'Déposé Drop', les cellules de B jusqu'à K se colorient en violet, et lorsque l'utilisateur choisit 'En cours', les cellules de B jusqu'à K se colorient en beige
 
 🔹 Technologies utilisées
 
@@ -54,6 +56,15 @@ Ce script est un Google Apps Script qui applique une mise en forme conditionnell
 🔹 Éviter les doublons en supprimant les anciennes règles avant d'ajouter les nouvelles.
 
 
+
+
+![image](https://github.com/user-attachments/assets/e0b91966-f577-4dac-936a-b7e77855ed79)
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/96c87d29-2116-4d49-82e6-5ecdb74a777a)
 
 
 
